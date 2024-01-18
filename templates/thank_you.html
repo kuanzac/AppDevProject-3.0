@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Library Loan System - Home{% endblock %}
+{% block content %}
+<h1>Thank You, {{ user_name }}</h1>
+<p>An email has been sent to {{ user_email }}</p>
+    <p>If you would like to update your email, <a href="/updateUser/{{User.get_user_id()}}" class="btn btn-warning">update here</a>.</p>
+{% endblock %}
